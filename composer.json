@@ -1,5 +1,5 @@
 {
-    "name": "microman/inherit",
+    "name": "microman/kirby-inherit",
     "description": "Get field from parent page if empty",
     "license": "MIT",
     "type": "kirby-plugin",
