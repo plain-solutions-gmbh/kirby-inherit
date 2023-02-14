@@ -2,11 +2,18 @@
 
 Get the field of the parent pages if it's empty or not exists. It goes all up till the site.
 
+
+## Overview
+
+<plugin-description>
+
+> This plugin is free to use and published under the MIT license. If you use this plugin for commercial purposes, or you want to show your appreciation. [support me with a donation](https://www.paypal.com/donate/?hosted_button_id=BHXBDRWYPUPCG).
+
 ## Installation
 
 **Manually**
 
-[Download](https://github.com/youngcut/kirby-inherit/archive/refs/heads/main.zip) and copy the plugin into your plugin folder: `/site/plugins/`
+[Download](https://github.com/youngcut/kirby-inherit) and copy the plugin into your plugin folder: `/site/plugins/`
 
 **With Composer**
 
@@ -30,6 +37,8 @@ You can also use it for another page:
     $page->hero_image($page->find('another_site'))->inherit()
 ```
 
-## Like it?
+## License
 
-[Get a license](https://license.microman.ch/?product=811709) and keep in touch.
+MIT
+
+> Do you like this Plugin? [Buy me a ☕️](https://www.paypal.com/donate/?hosted_button_id=BHXBDRWYPUPCG)
