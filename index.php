@@ -4,6 +4,10 @@ Kirby::plugin('microman/inherit', [
 	'fieldMethods' => [
         'inherit' => function ($field, $page = null) {
 			
+			if( $field->isNotEmpty() ){
+				return $field;
+			}
+
 			$page = $page ?? page();
 			$field = $page->content()->get($field->key());
 				
