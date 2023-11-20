@@ -34,7 +34,7 @@ It goes all way up. At the end it will take the imgae from the main site.
 You can also use it for another page:
 
 ```
-    $page->hero_image($page->find('another_site'))->inherit()
+    $page->hero_image()->inherit( page('another_site') )
 ```
 
 ## License
