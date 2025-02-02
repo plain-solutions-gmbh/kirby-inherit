@@ -8,7 +8,7 @@ Kirby::plugin('microman/inherit', [
 				return $field;
 			}
 
-			$page = $page ?? page();
+			$page = $page ?? $field->parent() ?? page();
 			$field = $page->content()->get($field->key());
 				
 			if ($field->isEmpty() && is_a($page, "Kirby\Cms\Page")) {
