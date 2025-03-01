@@ -2,13 +2,6 @@
 
 Get the field of the parent pages if it's empty or not exists. It goes all up till the site.
 
-
-## Overview
-
-<plugin-description>
-
-> This plugin is free to use and published under the MIT license. If you use this plugin for commercial purposes, or you want to show your appreciation. [support me with a donation](https://www.paypal.com/donate/?hosted_button_id=BHXBDRWYPUPCG).
-
 ## Installation
 
 **Manually**
@@ -17,7 +10,7 @@ Get the field of the parent pages if it's empty or not exists. It goes all up ti
 
 **With Composer**
 
-`composer require microman/kirby-inherit`
+`composer require getplain/kirby-inherit`
 
 ## How to use
 
@@ -39,6 +32,4 @@ You can also use it for another page:
 
 ## License
 
-MIT
-
-> Do you like this Plugin? [Buy me a ☕️](https://www.paypal.com/donate/?hosted_button_id=BHXBDRWYPUPCG)
+This plugin is free to use and is published under the MIT license. If you use this plugin for commercial purposes or wish to show your appreciation, [support me with a donation](https://www.paypal.com/donate/?hosted_button_id=BHXBDRWYPUPCG).
