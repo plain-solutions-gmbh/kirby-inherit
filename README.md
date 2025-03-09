@@ -10,7 +10,7 @@ Get the field of the parent pages if it's empty or not exists. It goes all up ti
 
 **With Composer**
 
-`composer require getplain/kirby-inherit`
+`composer require plain/kirby-inherit`
 
 ## How to use
 
