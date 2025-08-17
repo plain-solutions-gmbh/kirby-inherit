@@ -4,4 +4,4 @@
 
 use Plain\Helpers\Plugin;
 
-Plugin::load('plain/inherit', autoloader: ['config', 'cache' => false]);
+Plugin::load('plain/inherit', autoloader: true);
