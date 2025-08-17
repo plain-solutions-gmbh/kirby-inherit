@@ -8,12 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Git
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-      - name: Create tag
-        run: |
-          VERSION=$(jq -r .version composer.json)
-          git tag "v$VERSION"
-          git push origin "v$VERSION"
+
+      - name: Get version from composer.json
+        id: version
+        run: echo "VERSION=v$(jq -r .version composer.json)" >> $GITHUB_ENV
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.VERSION }}
+          name: Release ${{ env.VERSION }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
