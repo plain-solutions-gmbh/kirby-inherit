@@ -1,7 +1,7 @@
 <?php
 
-@include_once __DIR__ . '/utils/load.php';
+use Kirby\Cms\App;
 
-use Plain\Helpers\Plugin;
-
-Plugin::load('plain/inherit', autoloader: true);
+App::plugin('plain/inherit', [
+    'fieldMethods' => require __DIR__ . '/config/fieldMethods.php',
+]);
