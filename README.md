@@ -2,6 +2,10 @@
 
 Get the field of the parent pages if it's empty or not exists. It goes all up till the site.
 
+## Compatibility
+
+Works with Kirby 4, 5 and 6.
+
 ## Installation
 
 **Manually**
